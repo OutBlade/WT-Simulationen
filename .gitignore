@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+_site/
+web/_content/
+.jupyterlite.doit.db
+# written by the simulations themselves
+simulationen/**/*.pdf
+simulationen/**/Knuth.png

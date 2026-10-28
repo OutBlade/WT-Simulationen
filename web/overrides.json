@@ -1,0 +1,9 @@
+{
+  "@jupyterlab/docmanager-extension:plugin": {
+    "autosave": false
+  },
+  "@jupyterlab/apputils-extension:notification": {
+    "fetchNews": "false",
+    "checkForUpdates": false
+  }
+}

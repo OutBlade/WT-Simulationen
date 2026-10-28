@@ -1,0 +1,17 @@
+[project]
+name = "wt-simulationen"
+version = "1.0.0"
+description = "Launcher for the KIT Wahrscheinlichkeitstheorie simulations"
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "scipy",
+    "matplotlib",
+    "pandas",
+    "openpyxl",
+    "ipywidgets",
+    "jupyterlab",
+]
+
+[tool.uv]
+package = false
