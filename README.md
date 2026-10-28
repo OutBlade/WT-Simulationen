@@ -2,14 +2,18 @@
 
 Alle Simulationen aus Vorlesung und Übung **Wahrscheinlichkeitstheorie** (KIT, CEL) in einem Notebook: Simulation auswählen, **Ausführen** klicken, Plots und Erklärtexte erscheinen direkt darunter. Schieberegler-Simulationen bleiben interaktiv.
 
+**Sofort im Browser, ohne Installation:** https://outblade.github.io/WT-Simulationen/notebooks/index.html?path=Start.ipynb
+
 ## Starten
 
 | Weg | Was man braucht | Dauer |
 |---|---|---|
 | **Windows:** Doppelklick auf `Start.cmd` | nichts | erstes Mal ca. 2 min, danach Sekunden |
 | **macOS / Linux:** `sh start.sh` | nichts | erstes Mal ca. 2 min, danach Sekunden |
-| **Browser:** die veröffentlichte Web-Version öffnen | nur einen Browser, auch Tablet/Handy | ca. 20 s bis der Python-Kern geladen ist |
+| **Browser:** [Web-Version](https://outblade.github.io/WT-Simulationen/notebooks/index.html?path=Start.ipynb) öffnen | nur einen Browser, auch Tablet/Handy | ca. 20 s bis der Python-Kern geladen ist |
 | **VS Code:** `Start.ipynb` öffnen, Kernel `.venv` wählen | Python-Erweiterung | sofort |
+
+Herunterladen: `git clone https://github.com/OutBlade/WT-Simulationen.git` oder auf GitHub *Code → Download ZIP*.
 
 `Start.cmd` und `start.sh` installieren beim ersten Mal [uv](https://docs.astral.sh/uv/) (falls nicht vorhanden), legen daraus eine eigene Python-Umgebung mit genau den Versionen aus `uv.lock` an und öffnen JupyterLab mit `Start.ipynb`. Am System wird sonst nichts verändert; alles liegt in diesem Ordner unter `.venv`.
 
@@ -57,4 +61,4 @@ uv run python tools/update_simulationen.py
 uv run --no-project --with-requirements web/requirements.txt python web/build.py
 ```
 
-Ergebnis in `_site/`, ein statischer Ordner für jeden Webserver. Liegt das Repository auf GitHub, baut `.github/workflows/pages.yml` die Seite bei jedem Push auf `main` und veröffentlicht sie über GitHub Pages (Settings → Pages → Source: GitHub Actions).
+Ergebnis in `_site/`, ein statischer Ordner für jeden Webserver. `.github/workflows/pages.yml` baut die Seite bei jedem Push auf `main` neu und veröffentlicht sie über GitHub Pages.
